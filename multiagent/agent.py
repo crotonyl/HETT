@@ -602,19 +602,10 @@ class NavCMTAgent:
                 #     continue
 
 
-                # if len(traj[i]['trajectory']) >= 5 and stage1_ended[i]:
-                #     if traj[i]['trajectory'][-5].xy.dist_to(poses[i].xy) < 5:
-                #         ended[i] = True
-                #         continue
-
-                # if pred_progress_t[i] > 0.95 and stage1_ended[i]:
-                #     # Updated 'ended' list and make environment action
-                #     ended[i] = True
-                #     continue
-                # elif pred_progress_t[i] > 0.95 and self.feedback == 'student' and stage1_ended[i]:
-                #     # Updated 'ended' list and make environment action
-                #     ended[i] = True
-                #     continue
+                elif pred_progress_t[i] > 0.95 and self.feedback == 'student' and stage1_ended[i]:
+                    # Updated 'ended' list and make environment action
+                    ended[i] = True
+                    continue
                 elif t == self.args.max_action_len:
                     ended[i] = True
                     continue
