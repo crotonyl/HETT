@@ -8,6 +8,10 @@ Aerial Vision-and-Language Navigation (AVLN) requires Unmanned Aerial Vehicle (U
 
 
 
+Project Page:[HETT](https://crotonyl.github.io/HETT.git.io/)
+
+
+
 ## Setup
 
 This code was developed with Python 3.10, PyTorch 2.2.2, and CUDA 11.3 on Ubuntu 22.04.
